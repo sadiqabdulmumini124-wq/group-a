@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tasty Bites Restaurant</title>
+  <meta name="description" content="Get in touch with Tasty Bites Restaurant. Send us a message, call us, or stop by." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy">
+          <span>Tasty Bites Restaurant</span>
+          <small>Group A</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Meet the Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Get in touch</h2>
+          <p>Reservations, bulk orders, or just a hello — we'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="info-card">
+            <h3>Visit & call</h3>
+            <ul>
+              <li><strong>Address:</strong> Jimeta, Yola, Adamawa State, Nigeria</li>
+              <li><strong>Phone:</strong> <a href="tel:+2348000000000">+234 800 000 0000</a></li>
+              <li><strong>Email:</strong> <a href="mailto:sadiqabdulmumini124@gmail.com">sadiqabdulmumini124@gmail.com</a></li>
+              <li><strong>Hours:</strong> Mon–Sat, 11:00 AM – 10:00 PM</li>
+              <li><strong>Sunday:</strong> 12:00 PM – 8:00 PM</li>
+            </ul>
+            <p style="margin-top:1rem;color:var(--muted);font-size:0.9rem;">Walk-ins welcome. For groups larger than 8, please call ahead.</p>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div id="form-success" class="alert">Thanks! Your message has been received. We'll reply within 24 hours.</div>
+            <div id="form-error" class="alert alert-error">Your message could not be sent. Please try again.</div>
+
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <span class="error" id="err-name"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <span class="error" id="err-email"></span>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required />
+              <span class="error" id="err-subject"></span>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error" id="err-message"></span>
+            </div>
+
+            <button type="submit" class="btn">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tasty Bites Restaurant. Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

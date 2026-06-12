@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Tasty Bites Restaurant</title>
+  <meta name="description" content="Browse our full menu of Ghanaian classics: jollof, waakye, banku &amp; tilapia, kelewele, sobolo, and more. Search and filter by category." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy">
+          <span>Tasty Bites Restaurant</span>
+          <small>Group A</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">Meet the Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Menu</h2>
+          <p>Search by name or filter by category</p>
+        </div>
+
+        <div class="menu-controls">
+          <input id="menu-search" class="menu-search" type="search" placeholder="Search dishes…" aria-label="Search menu" />
+          <button class="filter active" data-category="all">All</button>
+          <button class="filter" data-category="mains">Mains</button>
+          <button class="filter" data-category="sides">Sides</button>
+          <button class="filter" data-category="drinks">Drinks</button>
+          <button class="filter" data-category="desserts">Desserts</button>
+        </div>
+
+        <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tasty Bites Restaurant. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Cart UI -->
+  <button id="cart-button" class="cart-button" aria-label="Open cart" aria-controls="cart-panel" aria-expanded="false">
+    <span class="cart-button-label">Your order</span>
+    <span class="cart-badge" id="cart-count">0</span>
+  </button>
+  <div id="cart-panel" class="cart-panel" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-inner">
+      <header class="cart-head">
+        <div>
+          <span class="eyebrow">Your order</span>
+          <h3>Ready when you are</h3>
+        </div>
+        <button id="cart-close" class="cart-close" aria-label="Close cart">&times;</button>
+      </header>
+      <div id="cart-items" class="cart-items" aria-live="polite"></div>
+      <div class="cart-actions">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>₦<span id="cart-total">0</span></strong>
+        </div>
+        <div class="cart-buttons">
+          <button id="checkout-btn" class="btn">Continue to checkout</button>
+          <button id="clear-btn" class="btn btn-outline">Clear</button>
+        </div>
+      </div>
+      <div id="cart-msg" class="cart-msg" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <dialog id="checkout-dialog" class="checkout-dialog">
+    <div class="checkout-shell">
+      <button id="checkout-close" class="checkout-close" type="button" aria-label="Close checkout">&times;</button>
+
+      <div id="checkout-content">
+        <header class="checkout-head">
+          <span class="eyebrow">Secure checkout</span>
+          <h2>Complete your order</h2>
+          <p>Review your meal, choose how you want it, and add your details.</p>
+        </header>
+
+        <div class="checkout-layout">
+          <form id="checkout-form" class="checkout-form">
+            <fieldset class="fulfilment-options">
+              <legend>How would you like your order?</legend>
+              <label>
+                <input type="radio" name="fulfilment" value="Delivery" checked />
+                <span><strong>Delivery</strong><small>Delivered in 35–50 minutes</small></span>
+              </label>
+              <label>
+                <input type="radio" name="fulfilment" value="Pickup" />
+                <span><strong>Pickup</strong><small>Ready in 20–30 minutes</small></span>
+              </label>
+            </fieldset>
+
+            <div class="checkout-fields">
+              <label class="field">
+                <span>Full name</span>
+                <input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your full name" />
+              </label>
+              <label class="field">
+                <span>Phone number</span>
+                <input name="phone" type="tel" autocomplete="tel" required placeholder="e.g. 0801 234 5678" />
+              </label>
+              <label class="field field-wide" id="address-field">
+                <span>Delivery address</span>
+                <input name="address" type="text" autocomplete="street-address" required placeholder="Street, area and a nearby landmark" />
+              </label>
+              <label class="field field-wide">
+                <span>Order notes <small>(optional)</small></span>
+                <textarea name="notes" rows="3" placeholder="Allergies, spice level, or special instructions"></textarea>
+              </label>
+            </div>
+          </form>
+
+          <aside class="order-summary">
+            <h3>Order summary</h3>
+            <div id="checkout-items" class="checkout-items"></div>
+            <div class="summary-row"><span>Subtotal</span><span>₦<span id="checkout-subtotal">0</span></span></div>
+            <div class="summary-row"><span>Delivery</span><span id="delivery-fee">₦1,000</span></div>
+            <div class="summary-row summary-total"><span>Total</span><strong>₦<span id="checkout-total">0</span></strong></div>
+            <button class="btn checkout-submit" type="submit" form="checkout-form">Place order</button>
+            <p class="checkout-note">Payment is made on delivery or pickup.</p>
+            <p id="checkout-email-status" class="checkout-email-status" role="status" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+
+      <div id="checkout-success" class="checkout-success" hidden>
+        <div class="success-mark">✓</div>
+        <span class="eyebrow">Order confirmed</span>
+        <h2>Thank you, <span id="customer-name"></span>!</h2>
+        <p>Your order <strong id="order-number"></strong> has been received. We’ll call you shortly to confirm the details.</p>
+        <button id="success-close" class="btn" type="button">Back to the menu</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
