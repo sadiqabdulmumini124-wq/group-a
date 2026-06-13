@@ -56,14 +56,17 @@ async function initTeam(grid) {
 }
 
 function renderTeamMember(member) {
-  // Email and LinkedIn are optional, so only display links that exist.
+  // Contact details are optional, so only display links that exist.
   const email = member.email
     ? `<a href="mailto:${escapeHtml(member.email)}">${escapeHtml(member.email)}</a>`
+    : "";
+  const phone = member.phone
+    ? `<a href="tel:${escapeHtml(member.phone.replace(/\s+/g, ""))}">${escapeHtml(member.phone)}</a>`
     : "";
   const linkedin = member.linkedin
     ? `<a href="${escapeHtml(member.linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>`
     : "";
-  const links = [email, linkedin].filter(Boolean).join("<br/>");
+  const links = [email, phone, linkedin].filter(Boolean).join("<br/>");
 
   return `
     <article class="member member-featured">
