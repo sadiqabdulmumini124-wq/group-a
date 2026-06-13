@@ -102,5 +102,33 @@
     "image": "images/ephraim.jpeg",
     "email": "ephraimadamu196@gmail.com",
     "linkedin": ""
+  },
+  {
+    "fullName": "Jesse Yashim Felix",
+    "idNumber": "DL/IMT/23D/0167",
+    "level": "400 Level (Final Year)",
+    "programme": "Information Technology",
+    "faculty": "Faculty of Information Technology",
+    "institution": "Modibbo Adama University, Yola",
+    "role": "Content Lead",
+    "bio": "Jesse Yashim Felix is a dedicated and motivated student who works well with others, pays attention to detail, and strives to complete tasks effectively and on time. Participating in this group assignment gives him an opportunity to share his skills and learn from his teammates.",
+    "image": "images/jesse.jpeg",
+    "email": "",
+    "phone": "+234 813 863 7179",
+    "linkedin": ""
+  },
+  {
+    "fullName": "Muktar Adamu",
+    "idNumber": "DL/IMT/21U/0104",
+    "level": "400 Level",
+    "programme": "Information Management Technology",
+    "faculty": "Faculty of Information Technology",
+    "institution": "Modibbo Adama University, Yola",
+    "role": "Content Lead",
+    "bio": "Muktar Adamu completed his primary education at Hammawa Primary School and his secondary education at Aliyu Mustafa College. He is currently a 400-level Information Management Technology student and a footballer.",
+    "image": "images/Muktar.jpeg",
+    "email": "muktario538@gmail.com",
+    "phone": "",
+    "linkedin": ""
   }
 ]
