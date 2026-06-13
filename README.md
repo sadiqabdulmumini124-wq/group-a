@@ -6,12 +6,18 @@ Tasty Bites Restaurant is a responsive restaurant website developed by Group A a
 
 | Name | ID Number | Role in the Project |
 | --- | --- | --- |
-| Sadiq Abdulmumini | DL/IMT/23D/0159 | Project Coordinator |
-| Musa Aliyu | Not provided | Content Lead |
-| Hadiza Aminu | DL/IMT/23D/0166 | Frontend Developer |
-| Ahmed Sahabo Ubandoma | DL/IMT/23D/0156 | UI and Graphic Designer |
+| Sadiq Abdulmumini | DL/IMT/23D/0159 | Project Coordinator / Frontend Lead |
+| Musa Aliyu | DL/IMT/23D/0125 | Content Lead |
+| Hadiza Aminu | DL/IMT/23D/0166 | Frontend Member |
+| Ahmed Sahabo Ubandoma | DL/IMT/23D/0156 | UI Designer Lead |
+| Sarenso Obidah Nebari | DL/IMT/23D/0165 | UI Designer Member |
+| Rukaiya Mohammed | DL/IMT/23D/0148 | Content Member |
+| Sadiq Ibrahim Buwangal | DL/IMT/21U/0107 | Content Member |
+| Ephraim Adamu | DL/IMT/21U/0103 | Content Member |
 
-All members are students of Information Management Technology in the Faculty of Information Technology at Modibbo Adama University, Yola.
+All eight members are 400-level students of Information Management Technology in the Faculty of Information Technology at Modibbo Adama University, Yola.
+
+The project work is organized into three main areas: content, UI design, and frontend development. Each area has a lead supported by its team members.
 
 ## Technologies Used
 
