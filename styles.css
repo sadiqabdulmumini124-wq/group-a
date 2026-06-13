@@ -223,13 +223,16 @@ section { padding: 4rem 0; }
 .team-error { color: #a12b20; }
 @media (max-width: 640px) {
   .team-grid { grid-template-columns: 1fr; }
-  .member { text-align: left; }
+  .member { padding: 1rem; text-align: left; }
   .member-featured {
     display: flex; grid-column: auto; text-align: left;
   }
   .member-featured .avatar {
-    width: 170px; height: 170px; margin: 0 auto 1rem;
+    width: 180px; height: 180px; aspect-ratio: 1;
+    margin: 0 auto 1rem; border-radius: 50%;
+    flex: 0 0 180px;
   }
+  .member-featured .avatar img { object-position: center 30%; }
   .member:not(.member-featured) .avatar { margin-right: auto; margin-left: auto; }
 }
 
