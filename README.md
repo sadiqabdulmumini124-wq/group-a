@@ -4,18 +4,20 @@ Tasty Bites Restaurant is a responsive restaurant website developed by Group A a
 
 ## Group Members
 
-| Name | ID Number | Role in the Project |
-| --- | --- | --- |
-| Sadiq Abdulmumini | DL/IMT/23D/0159 | Project Coordinator / Frontend Lead |
-| Musa Aliyu | DL/IMT/23D/0125 | Content Lead |
-| Hadiza Aminu | DL/IMT/23D/0166 | Frontend Member |
-| Ahmed Sahabo Ubandoma | DL/IMT/23D/0156 | UI Designer Lead |
-| Sarenso Obidah Nebari | DL/IMT/23D/0165 | UI Designer Member |
-| Rukaiya Mohammed | DL/IMT/23D/0148 | Content Member |
-| Sadiq Ibrahim Buwangal | DL/IMT/21U/0107 | Content Member |
-| Ephraim Adamu | DL/IMT/21U/0103 | Content Member |
+| Name | ID Number | Level | Programme | Role | Contact |
+| --- | --- | --- | --- | --- | --- |
+| Sadiq Abdulmumini | DL/IMT/23D/0159 | 400 Level | Information Management Technology | Project Coordinator / Frontend Lead | sadiqabdulmumini124@gmail.com |
+| Musa Aliyu | DL/IMT/23D/0125 | 400 Level | Information Management Technology | Content Lead | Not provided |
+| Hadiza Aminu | DL/IMT/23D/0166 | 400 Level | Information Management Technology | Frontend Member | Not provided |
+| Ahmed Sahabo Ubandoma | DL/IMT/23D/0156 | 400 Level | Information Management Technology | UI Designer Lead | ahmedsahaboubandoma@gmail.com |
+| Sarenso Obidah Nebari | DL/IMT/23D/0165 | 400 Level | BSc Information Management Technology | UI Designer Member | Not provided |
+| Rukaiya Mohammed | DL/IMT/23D/0148 | 400 Level | BSc Information Management Technology | Content Member | mohammedrukaiya90@gmail.com |
+| Sadiq Ibrahim Buwangal | DL/IMT/21U/0107 | 400 Level | Information Management Technology | Content Member | buwangalsadiq@gmail.com |
+| Ephraim Adamu | DL/IMT/21U/0103 | 400 Level | Information Management Technology | Content Member | ephraimadamu196@gmail.com |
+| Jesse Yashim Felix | DL/IMT/23D/0167 | 400 Level (Final Year) | Information Technology | Content Lead | +234 813 863 7179 |
+| Muktar Adamu | DL/IMT/21U/0104 | 400 Level | Information Management Technology | Content Lead | muktario538@gmail.com |
 
-All eight members are 400-level students of Information Management Technology in the Faculty of Information Technology at Modibbo Adama University, Yola.
+All ten members are students in the Faculty of Information Technology at Modibbo Adama University, Yola. Their full biographies and photographs are stored in `team.json` and displayed on the Meet the Team page.
 
 The project work is organized into three main areas: content, UI design, and frontend development. Each area has a lead supported by its team members.
 
